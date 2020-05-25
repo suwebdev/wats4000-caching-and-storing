@@ -41,7 +41,6 @@ export default {
       messages: [],
       query: '',
       showLoading: false,
-      messages: []
     }
   },
   created () {
@@ -78,8 +77,6 @@ export default {
     formatDate: function (timestamp){
       let date = new Date(timestamp * 1000);
       const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-      const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      //let weekday = date.getDay();
       let daynum = date.getDate();
       let month = date.getMonth();
 
